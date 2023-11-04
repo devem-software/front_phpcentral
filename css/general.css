@@ -46,7 +46,9 @@ main menu.show_menu {
     left: 0;
 }
 
-main menu uol  nav ul {
+main menu uol 
+{}
+nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
