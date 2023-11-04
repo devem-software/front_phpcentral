@@ -1,0 +1,12 @@
+.logo_phpcentral {
+  -webkit-text-stroke: 2px silver;
+  -webkit-text-fill-color: #1e1e1e;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: "Ubuntu";
+  text-transform: lowercase;
+}
+
+.logo_phpcentral.big {
+  font-size: 3rem;
+}
