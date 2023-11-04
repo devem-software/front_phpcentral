@@ -47,7 +47,7 @@ main menu.show_menu {
 }
 
 main menu ul {
-  color: ;
+    color:red;
 }
 nav ul {
     list-style: none;
