@@ -59,7 +59,8 @@ body {
 
 .submenu ul li a div {
 height:2rem;
-display
+display:flex;
+align-items: center;
 }
 
 .submenu ul li a {
