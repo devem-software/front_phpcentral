@@ -47,6 +47,7 @@ body {
     display: flex;
     flex-direction: row;
     padding: 1rem;
+    text-decoration: nome;
 }
 
 .submenu ul li a i {
