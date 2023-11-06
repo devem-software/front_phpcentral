@@ -61,7 +61,7 @@ body {
     height: 2rem;
     display: flex;
     align-items: center;
-    line-height: 1r
+    line-height: 1r;
 }
 
 .submenu ul li a {
