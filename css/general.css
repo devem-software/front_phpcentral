@@ -49,7 +49,10 @@ body {
     padding: 1rem;
 }
 
-.submenu ul li a i{}
+.submenu ul li a i {
+  width: 2rem;
+  height: 2rem;
+}
 
 .submenu ul li a {
     color: whitesmoke;
