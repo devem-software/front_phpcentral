@@ -43,7 +43,7 @@ body {
     transition: all 0.1s linear;
 }
 
-.submenu ul li {
+.submenu ul li a {
     display: flex;
     flex-direction: row;
 }
