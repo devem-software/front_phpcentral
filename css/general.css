@@ -53,7 +53,7 @@ body {
     width: 2rem;
     height: 2rem;
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }
 
