@@ -46,8 +46,10 @@ body {
 .submenu ul li a {
     display: flex;
     flex-direction: row;
-    padding: 2rem;
+    padding: 1rem;
 }
+
+.submenu ul li a i{}
 
 .submenu ul li a {
     color: whitesmoke;
