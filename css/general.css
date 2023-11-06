@@ -46,6 +46,7 @@ body {
 .submenu ul li a {
     display: flex;
     flex-direction: row;
+    height:2;
 }
 
 .submenu ul li a {
