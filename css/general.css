@@ -43,6 +43,8 @@ body {
     transition: all 0.1s linear;
 }
 
+.s7bmenu
+
 .submenu.show_menu {
     left: 0;
 }
