@@ -57,7 +57,9 @@ body {
     align-items: center;
 }
 
-.submenu ul li a div{}
+.submenu ul li a div {
+  
+}
 
 .submenu ul li a {
     color: whitesmoke;
