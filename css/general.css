@@ -60,7 +60,6 @@ body {
 }
 
 .submenu ul li a div {
-    border: px solid;
     height: 2rem;
     display: flex;
     align-items: center;
