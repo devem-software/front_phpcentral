@@ -43,8 +43,8 @@ body {
     transition: all 0.1s linear;
 }
 
-.submenu ul  li a{
-  color:whitesmoke;
+.submenu ul li a {
+    color: whitesmoke;
 }
 
 .submenu.show_menu {
