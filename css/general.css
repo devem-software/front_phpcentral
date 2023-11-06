@@ -51,12 +51,11 @@ body {
 }
 
 .submenu ul li a i {
-    width: 2rem;
-    height: 2rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:.5rem;
+    padding: 0.5rem;
 }
 
 .submenu ul li a div {
