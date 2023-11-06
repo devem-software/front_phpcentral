@@ -54,6 +54,7 @@ body {
     height: 2rem;
     display: flex;
     justify-items: center;
+    align-self: ;
 }
 
 .submenu ul li a {
