@@ -1,6 +1,6 @@
 body.light,
 body {
-    --bg: whitesmoke;
+    --bg: #e1e1e1;
     --text: #1e1e1e;
     --accent: #4f5b93;
     --header: var(--text);
