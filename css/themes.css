@@ -8,7 +8,7 @@ body {
 body.dark,
 body {
     --bg: #1e1e1e;
-    --text: $;
+    --text:;
     --accent: #4f5b93;
     --header: var(--text);
 }
