@@ -46,7 +46,7 @@ body {
     height: 100%;
     border: 1px solid red;
     display: flex;
-    flex-direction: ;
+    flex-direction:column;
 }
 
 .submenu ul li a {
