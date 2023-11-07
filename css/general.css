@@ -72,7 +72,7 @@ body {
 }
 
 .submenu ul li a {
-    color: var(--();
+    color: var(--text);
 }
 
 .submenu.show_menu {
