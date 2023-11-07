@@ -30,6 +30,7 @@
     transform: skew(-15deg);
     line-height: 0.9;
     text-shadow: 1px 1px #fafafa;
+    color: var(--text);
 }
 .phpcentral_logo span {
     color: var(--accent);
