@@ -25,6 +25,7 @@
     font-weight: 900;
     font-style: italic;
     font-family: "Ubuntu";
+    color
 }
 .phpcentral_logo span {
     color: var(--accent);
