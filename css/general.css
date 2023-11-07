@@ -89,7 +89,7 @@ body {
     background: #4f5b93;
 }
 
-nav ul li {
+.nav ul li {
     display: flex;
     flex-direction: column;
     width: 3rem;
