@@ -106,7 +106,7 @@ nav ul li a {
     color: #e1e1e1;
     text-decoration: none;
 }
-nav ul li a {
+nav ul li a:active i{
 }
 
 nav ul li a i {
