@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 
 .logo_phpcentral {
-  font-weight: 900;
-  font-style: italic;
-  font-family: "Zen Dots";
-  text-transform: lowercase;
-  line-height: .9;
+    font-weight: 900;
+    font-style: italic;
+    font-family: "Zen Dots";
+    text-transform: lowercase;
+    line-height: 0.9;
 }
 
 .logo_phpcentral.white {
-  color: whitesmoke;
+    color: whitesmoke;
 }
 
 .php {
-  color: #4F5B93;
+    color: #4f5b93;
 }
 
 .logo_phpcentral.big {
-  font-size: 4rem;
+    font-size: 4rem;
 }
 
-.phpcentral_logo{
-  font-size: ;
+.phpcentral_logo {
+    font-size:em;
 }
