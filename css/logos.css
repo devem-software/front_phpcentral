@@ -26,7 +26,7 @@
     font-style: italic;
     font-family: "Ubuntu";
     color: var(--bg);
-    text-transform: ;
+    text-transform:uppercase;
 }
 .phpcentral_logo span {
     color: var(--accent);
