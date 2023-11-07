@@ -116,3 +116,5 @@ nav ul li a div {
 nav ul li:first-child {
     margin: 0 auto 0 0;
 }
+
+.last_item{}
