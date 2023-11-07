@@ -3,7 +3,7 @@ body {
     --bg: #fafafa;
     --text: #1e1e1e;
     --accent: #4f5b93;
-    --header: var(--text);
+    --header: #;
 }
 body.dark,
 body {
