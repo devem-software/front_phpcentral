@@ -117,4 +117,6 @@ nav ul li:first-child {
     margin: 0 auto 0 0;
 }
 
-.last_item{}
+.last_item {
+  margin: auto 0 0 auto;
+}
