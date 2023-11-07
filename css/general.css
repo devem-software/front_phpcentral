@@ -15,7 +15,7 @@ body {
     font-size: 16px;
     color: var(--text);
     font-family: "Ubuntu";
-    background: var;
+    background: var(--bg);
 }
 
 .header {
@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:;
+    align-items:center;
 }
 
 .content {
