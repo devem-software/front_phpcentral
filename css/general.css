@@ -42,9 +42,7 @@ body {
     background: #4f5b93;
     transition: all 0.1s linear;
 }
-.submenu ul {
-    height: 100%;
-    border: 1px solid red;
+.submenu 
     display: flex;
     flex-direction: column;
 }
