@@ -28,7 +28,8 @@
     color: var(--bg);
     text-transform: uppercase;
     transform: skew(-15deg);
-    line-height:.9;
+    line-height: 0.9;
+    text-shadow: 1px 1px ;
 }
 .phpcentral_logo span {
     color: var(--accent);
