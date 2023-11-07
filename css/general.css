@@ -111,7 +111,7 @@ body {
     font-size: 2rem;
 }
 
-nav ul li a div {
+.navigation ul li a div {
     font-size: 0.75rem;
     line-height: 1;
 }
