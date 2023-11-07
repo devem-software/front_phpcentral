@@ -107,11 +107,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li i {
+nav ul li a i {
     font-size: 2rem;
 }
 
- nav ul li a div {
+nav ul li a div {
     font-size: 0.75rem;
     line-height: 1;
 }
