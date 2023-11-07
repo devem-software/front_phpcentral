@@ -26,5 +26,5 @@
     font-style: italic;
 }
 .phpcentrao_logo span {
-  color:var();
+    color: var(--accent);
 }
