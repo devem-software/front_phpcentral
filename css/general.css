@@ -39,7 +39,7 @@ body {
     position: fixed;
     top: 3rem;
     left: -100%;
-    background: #4f5b93;
+    background: var(--accent);
     transition: all 0.1s linear;
     border-bottom: 1px solid #1e1e1e;
 }
