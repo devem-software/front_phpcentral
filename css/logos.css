@@ -25,4 +25,6 @@
     font-weight: 900;
     font-style: italic;
 }
-.phpcentrao_logo span{}
+.phpcentrao_logo span {
+  color:var();
+}
