@@ -5,8 +5,7 @@ body {
     --accent: #4f5b93;
     --header: #1e1e1e;
 }
-body.dark,
-body {
+body.dark {
     --bg: #1e1e1e;
     --text: #fafafa;
     --accent: #4f5b93;
