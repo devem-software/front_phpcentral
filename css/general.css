@@ -107,9 +107,10 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li a:active i {
-  posirelation: ;
+  position: relative;
+  margin-bottom:.25rem;
 }
-}
+
 
 nav ul li a i {
     font-size: 2rem;
