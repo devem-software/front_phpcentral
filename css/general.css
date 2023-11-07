@@ -43,7 +43,8 @@ body {
     transition: all 0.1s linear;
 }
 .submenu ul {
-    height:100;
+    height: 100;
+    border: 1px solid;
 }
 
 .submenu ul li a {
