@@ -96,7 +96,7 @@ body {
     margin: 0 1rem;
 }
 
-nav ul li a {
+.navigation ul li a {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
