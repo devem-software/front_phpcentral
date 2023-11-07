@@ -23,7 +23,8 @@
 .phpcentral_logo {
     font-size: 3rem;
     font-weight: 900;
-    font-style: italic;font-family: ;
+    font-style: italic;
+    font-family:"Ubuntu";
 }
 .phpcentrao_logo span {
     color: var(--accent);
