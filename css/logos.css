@@ -29,7 +29,7 @@
     text-transform: uppercase;
     transform: skew(-15deg);
     line-height: 0.9;
-    text-shadow: 1px 1px ;
+    text-shadow: 1px 1px #fafafa;
 }
 .phpcentral_logo span {
     color: var(--accent);
