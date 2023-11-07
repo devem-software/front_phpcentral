@@ -1,4 +1,6 @@
 body.light,
 body {
-    --bg: whitesmoke;--accent:
+    --bg: whitesmoke;
+    --accent:#1e1e1e; 
+;
 }
