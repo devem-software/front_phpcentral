@@ -7,6 +7,6 @@ body {
 body.dark,
 body {
     --bg: #1e1e1e;
-    --text: #1e1e1e;
+    --text: whitesmoke;
     --accent: #4f5b93;
 }
