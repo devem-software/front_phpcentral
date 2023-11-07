@@ -111,9 +111,7 @@ nav ul li a i {
     font-size: 2rem;
 }
 
-nav ul
-
-nav ul li a div {
+nav ul nav ul li a div {
     font-size: 0.75rem;
     line-height: 1;
 }
