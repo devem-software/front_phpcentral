@@ -7,3 +7,7 @@ document
         icon.classList.toggle('mdi-close')
     }
     )
+
+document.getElementById("switch_theme").addEventListener("click", () => {
+    document.body.classList.toggle("dark")
+})

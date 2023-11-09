@@ -25,13 +25,12 @@
     font-weight: 900;
     /* font-style: italic; */
     font-family: "Ubuntu";
-    color: var(--bg);
     text-transform: uppercase;
     transform: skew(-15deg);
     line-height: 0.9;
-    text-shadow: 1px 1px #fafafa;
-    color: var(--text);
+    color: rgb(var(--text));
 }
+
 .phpcentral_logo span {
-    color: var(--accent);
+    color: rgb(var(--accent));
 }

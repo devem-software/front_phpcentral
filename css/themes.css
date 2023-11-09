@@ -1,13 +1,14 @@
 body.light,
 body {
-    --bg: #fafafa;
-    --text: #1e1e1e;
-    --accent: #4f5b93;
-    --header: #1e1e1e;
+    --bg: 250, 250, 250;
+    --text: 38, 50, 56;
+    --accent: 63, 81, 181;
+    --header: 38, 50, 56;
 }
+
 body.dark {
-    --bg: #1e1e1e;
-    --text: #fafafa;
-    --accent: #4f5b93;
-    --header: #fafafa;
+    --bg: 38, 50, 56;
+    --text: 250, 250, 250;
+    --accent: 63, 81, 181;
+    --header: 250, 250, 250;
 }

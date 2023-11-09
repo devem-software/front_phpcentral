@@ -1,118 +1,113 @@
 <!doctype html>
 <html>
-	<head>
-		<title>Tu Título</title>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css"
-		/>
 
-		<link rel="stylesheet" type="text/css" href="./css/app.css" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, user-scalable=no"
-		/>
-	</head>
+<head>
+    <title>Tu Título</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css" />
 
-	<body class="light">
-		<header class="header">
-			<!-- 		<img
+    <link rel="stylesheet" type="text/css" href="./css/app.css" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no" />
+</head>
+
+<body class="light dark">
+    <header class="header">
+        <!-- 		<img
 				style="transform: skewX(-15deg); height: 100%"
 				src="./assets/phpcentral_logo_dark.svg"
 				alt=""
 			/> -->
-			<div class="phpcentral_logo"><span>php</span>central</div>
-			<i class="mdi mdi-24px mdi-theme-light-dark"></i>
-		</header>
-		<main class="content">
-			<section>
-				<img
-					style="
+        <div class="phpcentral_logo"><span>php</span>central</div>
+        <i class="mdi mdi-24px mdi-theme-light-dark" id="switch_theme"></i>
+    </header>
+    <main class="content">
+        <section>
+            <img style="
 						transform: skewX(-15deg);
 						width: calc(100% - 4rem);
 						max-width: 100rem;
-					"
-					src="./assets/phpcentral_logo_light.svg"
-					alt=""
-				/>
-				<h3>la cumunidad mas grande de Php en español que puedad encontrar</h3>
-				<div class="slider">
-					<ul>
-						<li>preguntas y respuestas</li>
-						<li>tutoriales</li>
-						<li>amigos</li>
-					</ul>
-				</div>
-			</section>
-		</main>
-		<menu class="submenu" id="menu_container">
-			<ul>
-				<li>
-					<a href="#">
-						<i class="mdi mdi-24px mdi-book"></i>
-						<div>NOTAS</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="mdi mdi-24px mdi-youtube"></i>
-						<div>VIDEOS</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="mdi mdi-24px mdi-book-open-variant"></i>
-						<div>TUTORIALES</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="mdi mdi-24px mdi-account-cash"></i>
-						<div>BUSCA O PUBLICA TRABAJO</div>
-					</a>
-				</li>
-				<li class="last_item">
-					<a href="#">
-						<i class="mdi mdi-24px mdi-theme-light-dark"></i>
-						<div>CAMBIAR ASPECTO</div>
-					</a>
-				</li>
-			</ul>
-		</menu>
-		<nav class="navigation">
-			<ul>
-				<li id="menu_wrapper">
-					<a href="#">
-						<i class="mdi mdi-menu"></i>
-						<div>menu</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="mdi mdi-home"></i>
-						<div>inicio</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="mdi mdi-account-group"></i>
-						<div>centrals</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="mdi mdi-frequently-asked-questions"></i>
-						<div>feed</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="mdi mdi-account"></i>
-						<div>perfil</div>
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<script src="./js/phpcentral.js"></script>
-	</body>
+					" src="./assets/phpcentral_logo_light.svg" alt="" />
+            <h3>la cumunidad mas grande de Php en español que puedad encontrar
+            </h3>
+            <div class="slider">
+                <ul>
+                    <li>preguntas y respuestas</li>
+                    <li>tutoriales</li>
+                    <li>amigos</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <menu class="submenu" id="menu_container">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="mdi mdi-24px mdi-book"></i>
+                    <div>NOTAS</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="mdi mdi-24px mdi-youtube"></i>
+                    <div>VIDEOS</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="mdi mdi-24px mdi-book-open-variant"></i>
+                    <div>TUTORIALES</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="mdi mdi-24px mdi-account-cash"></i>
+                    <div>BUSCA O PUBLICA TRABAJO</div>
+                </a>
+            </li>
+            <li class="last_item">
+                <a href="#">
+                    <i class="mdi mdi-24px mdi-theme-light-dark"></i>
+                    <div>CAMBIAR ASPECTO</div>
+                </a>
+            </li>
+        </ul>
+    </menu>
+    <nav class="navigation">
+        <ul>
+            <li id="menu_wrapper">
+                <a href="#">
+                    <i class="mdi mdi-menu"></i>
+                    <div>menu</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="mdi mdi-home"></i>
+                    <div>inicio</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="mdi mdi-account-group"></i>
+                    <div>centrals</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="mdi mdi-frequently-asked-questions"></i>
+                    <div>feed</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="mdi mdi-account"></i>
+                    <div>perfil</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script src="./js/phpcentral.js"></script>
+</body>
+
 </html>
