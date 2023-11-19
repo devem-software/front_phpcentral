@@ -1,0 +1,2 @@
+"use strict";var e=function(e){return document.querySelector(e)};console.log(e("#menu_wrapper"));e("#menu_wrapper").addEventListener("click",(function(){e("#menu_container").classList.toggle("show_menu");var t=e("#menu_wrapper").childNodes[1];t.classList.toggle("mdi-menu"),t.classList.toggle("mdi-close")})),e("#switch_theme").addEventListener("click",(function(){document.body.classList.toggle("dark")}));
+//# sourceMappingURL=phpcentral-dist.js.map

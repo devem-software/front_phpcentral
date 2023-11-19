@@ -1,33 +1,97 @@
-body {
+%style_layout {
 	display: flex;
-	height: 100vh;
-	width: 100vw;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+	margin: 1rem;
+	border-radius: 1rem;
+	background: var(--header);
+	box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.5);
+}
+body {
 	header {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		padding: 0.5rem 1rem;
-		margin: 0.5rem;
-		border-radius: 1rem;
-		background: var(--header);
-		box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.5);
+		@extend %style_layout;
+		height: $header_height;
 	}
 	main {
-		border: 1px solid;
-		margin: 0.5rem;
-		height: calc(100% - 3rem);
+		margin: 0 1rem;
 		padding: 1rem;
+		height: $main_height;
 	}
 
 	menu {
 		position: fixed;
+		top: 4.5rem;
+		left: -50%;
+		display: flex;
+		flex-direction: column;
+		border-radius: 1rem;
+		height: calc($main_height - 3rem);
+		width: 50%;
+		background: rgb(var(--blue));
+		transition: all 0.1s ease;
+		&.show_menu {
+			left: 0.5rem;
+		}
+		a {
+			&:first-child {
+				margin-top: auto;
+			}
+			display: flex;
+			align-items: center;
+			padding: 0.5rem 1rem;
+			color: rgb(var(--bg));
+			i {
+				margin-right: 1rem;
+			}
+		}
 	}
 
 	nav {
-		display: flex;
-		flex-direction: row;
-		width: 100%;
+		@extend %style_layout;
+		padding: 0;
+		height: $nav_height;
+		a {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			color: var(--text);
+			width: 3rem;
+			height: 3rem;
+			margin: 0.5rem;
+			&:not(:first-child):not(:last-child):active {
+				transform: scale(125%) translate(0, -6.25%);
+			}
+			&:first-child {
+				margin-right: auto;
+				margin-left: 0;
+				border-radius: 1rem 0 0 1rem;
+			}
+			&:last-child {
+				margin-right: 0;
+				margin-left: auto;
+				color: rgb(var(--bg));
+				background: rgb(var(--orange));
+				border-radius: 0 1rem 1rem 0;
+			}
+			i {
+				font-size: 150%;
+				border-radius: 1rem;
+				height: 2rem;
+				width: 2rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			div {
+				position: relative;
+				top: -0.25rem;
+				font-size: 62.5%;
+				text-transform: uppercase;
+			}
+		}
 	}
 }

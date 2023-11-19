@@ -11,8 +11,19 @@ body {
 		--text: var(--dark);
 		--bg: var(--light);
 		--header: rgba(var(--dark), 0.1);
+		--menu: rgb(var(--blue));
 		background: rgb(var(--bg));
 		color: rgb(var(--text));
+		nav {
+			a:first-child {
+				color: rgb(var(--blue));
+				background: none;
+			}
+			a:last-child {
+				color: rgb(var(--orange));
+				background: none;
+			}
+		}
 	}
 	&.dark {
 		--text: var(--light);
@@ -20,5 +31,15 @@ body {
 		--header: rgba(var(--light), 0.1);
 		background: rgb(var(--bg));
 		color: rgb(var(--text));
+		nav {
+			a:first-child {
+				color: rgb(var(--light));
+				background: rgb(var(--blue));
+			}
+			a:last-child {
+				color: rgb(var(--light));
+				background: rgb(var(--orange));
+			}
+		}
 	}
 }
