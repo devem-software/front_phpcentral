@@ -1,5 +1,7 @@
-const $ = (_el) => document.querySelector(_el)
-const $all = (_el) => document.querySelectorAll(_el)
+const $ = (_el) => document.querySelector(_el);
+const $all = (_el) => document.querySelectorAll(_el);
+
+console.log($("header"));
 
 const store = {
   get: (key) => {
