@@ -1,5 +1,5 @@
-const $ = (_el) => document.querySelector(_el);
-const $all = (_el) => document.querySelectorAll(_el);
+var $ = (_el) => document.querySelector(_el);
+var $all = (_el) => document.querySelectorAll(_el);
 
 console.log($("header"));
 
@@ -15,7 +15,7 @@ const store = {
   }
 }
 
-$("#menu_wrapper").addEventListener("click", (e) => {
+$("#menu_wrapper").addEventListener("click", () => {
     $("#menu_container").classList.toggle("show_menu")
     let icon = $("#menu_wrapper").childNodes[1]
     icon.classList.toggle('mdi-menu')
