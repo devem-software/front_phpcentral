@@ -13,8 +13,7 @@ const store = {
   }
 }
 
-$("#menu_wrapper")
-  .addEventListener("click", (e) => {
+$("#menu_wrapper").addEventListener("click", (e) => {
     $("#menu_container").classList.toggle("show_menu")
     let icon = $("#menu_wrapper").childNodes[1].childNodes[1]
     icon.classList.toggle('mdi-menu')
