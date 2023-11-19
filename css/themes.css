@@ -3,7 +3,8 @@ body {
     --bg: 250, 250, 250;
     --text: 38, 50, 56;
     --accent: 63, 81, 181;
-    --header: 38, 50, 56;
+   /*  --header: 38, 50, 56; */
+   --header:var(--text);
 }
 
 body.dark {
