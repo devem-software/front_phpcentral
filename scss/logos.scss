@@ -6,7 +6,7 @@
 	line-height: 0.9;
 	display: flex;
 	flex-flow: row wrap;
-	-webkit-text-stroke: 2px rgba(var(--text), 0.25);
+	// -webkit-text-stroke: 2px rgba(var(--text), 0.25);
 
 	@for $i from 1 through 10 {
 		&.#{'x' + #{$i}} {
@@ -16,10 +16,13 @@
 	}
 	.php {
 		color: rgb(var(--orange));
-		text-shadow: 1px 1px rgba(255, 255, 255, 0.75), 1px 1px 3px;
+		text-shadow: 1px 1px rgba(var(--bg), 0.75), 1px 1px 3px;
 	}
 	.central {
 		color: rgb(var(--blue));
-		text-shadow: 1px 1px rgba(255, 255, 255, 0.75), 1px 1px 3px;
+		text-shadow: 1px 1px rgba(var(--bg), 0.75), 1px 1px 3px;
+	}
+	&.no-pad {
+		padding: 0;
 	}
 }
