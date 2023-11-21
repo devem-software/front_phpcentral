@@ -1,8 +1,6 @@
 var $ = (_el) => document.querySelector(_el);
 var $all = (_el) => document.querySelectorAll(_el);
 
-console.log($('#menu_button'));
-
 const store = {
     get: (key) => {
         return localStorage.getItem('key')
@@ -11,10 +9,27 @@ const store = {
         localStorage.setItem(key, value)
     },
     update: (key, value) => {
-        if (this.get(key) !== undefined) this.set(key, value)
+        if (store.get(key) !== undefined) store.set(key, value)
     },
-    validate: (key) => (this.get(key) === undefined) ? false : true,
+    validate: (key) => {
+        if (store.get(key) === null || store.get(key) === undefined) {
+            return false
+        }
+        else {
+            return true
+        }
+    },
+    setMasive: (obj) => {
+        let keys = Object.keys(obj)
+        let values = Object.values(obj)
+
+        keys.forEach((k, i) => {
+            store.set(k, values[i])
+        })
+    }
 }
+
+store.setMasive({ 'a': 1, 'b': 2, 'c': 3 })
 
 $('#menu_button').addEventListener('click', () => {
     $('#menu_container').classList.toggle('show_menu')
