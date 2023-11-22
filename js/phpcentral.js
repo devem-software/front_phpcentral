@@ -29,7 +29,6 @@ const store = {
     }
 }
 
-store.setMasive({ 'a': 1, 'b': 2, 'c': 3 })
 
 $('#menu_button').addEventListener('click', () => {
     $('#menu_container').classList.toggle('show_menu')

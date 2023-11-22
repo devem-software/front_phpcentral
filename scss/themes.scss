@@ -1,6 +1,7 @@
 :root {
 	--light: #{$light};
 	--dark: #{$dark};
+	--soft: #{$soft};
 	--orange: #{$orange};
 	--blue: #{$blue};
 }
@@ -10,36 +11,28 @@ body {
 	& {
 		--text: var(--dark);
 		--bg: var(--light);
-		--header: rgba(var(--dark), 0.1);
-		--menu: rgb(var(--blue));
+		--header: linear-gradient(
+			90deg,
+			rgba(var(--text), 0.05) 40%,
+			rgba(var(--orange), 1) 75%,
+			rgba(var(--blue), 1)
+		);
+		--menu: rgb(var(--orange));
 		background: rgb(var(--bg));
 		color: rgb(var(--text));
-		nav {
-			a:first-child {
-				color: rgb(var(--blue));
-				background: none;
-			}
-			a:last-child {
-				color: rgb(var(--orange));
-				background: none;
-			}
-		}
 	}
+
 	&.dark {
 		--text: var(--light);
 		--bg: var(--dark);
-		--header: rgba(var(--light), 0.1);
+		--header: linear-gradient(
+			90deg,
+			rgba(var(--text), 0.05) 40%,
+			rgba(var(--orange), 1) 75%,
+			rgba(var(--blue), 1)
+		);
+		--menu: rgba(var(--soft), 1);
 		background: rgb(var(--bg));
 		color: rgb(var(--text));
-		nav {
-			a:first-child {
-				color: rgb(var(--light));
-				background: rgb(var(--blue));
-			}
-			a:last-child {
-				color: rgb(var(--light));
-				background: rgb(var(--orange));
-			}
-		}
 	}
 }
