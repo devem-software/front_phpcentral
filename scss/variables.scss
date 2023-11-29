@@ -2,11 +2,29 @@ $light: 250, 250, 250;
 $soft: 55, 71, 79;
 $dark: 33, 33, 33;
 $blue: 63, 81, 181;
+$blue: 41, 121, 255;
 $orange: 255, 87, 34;
+$orange: 255, 61, 0;
+
+$Cblue: rgb(41, 121, 255);
+$Corange: rgb(255, 61, 0);
+$Clight: lighten(darken(mix($Cblue, $Corange, 70%), 45%), 5%);
+$Cdark: darken(mix($Cblue, $Corange, 70%), 45%);
+
+$orange: #ff9100;
+$blue: #2979ff;
+
+$hdark: #263238;
+$sdark: #455a64;
+
+$hlight: #cfd8dc;
+$slight: #fefefe;
 
 $font-size: 16px;
-$font-family: 'Zen Dots';
+$font-family: 'Ubuntu';
+$font-family-logo: 'Zen Dots';
 
 $header_height: 3rem;
 $nav_height: 3rem;
 $main_height: calc(100% - $header_height - $nav_height);
+$menu_height: calc($main_height - 2rem);

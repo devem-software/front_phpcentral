@@ -1,13 +1,10 @@
 .logo {
-	font-family: $font-family;
+	font-family: $font-family-logo;
 	font-weight: 900;
-	padding: 0.25rem;
-	transform: skew(-15deg);
+	font-style: italic;
 	line-height: 0.9;
 	display: flex;
 	flex-flow: row wrap;
-	// -webkit-text-stroke: 2px rgba(var(--text), 0.25);
-
 	@for $i from 1 through 10 {
 		&.#{'x' + #{$i}} {
 			padding: #{(0.125 * $i) + 'rem' (0.25 * $i) + 'rem'};
@@ -15,36 +12,12 @@
 		}
 	}
 	.php {
-		color: rgb(var(--orange));
-		text-shadow: 1px 1px rgba(var(--bg), 0.75), 1px 1px 3px;
+		color: $blue;
 	}
 	.central {
-		color: rgb(var(--blue));
-		text-shadow: 1px 1px rgba(var(--bg), 0.75), 1px 1px 3px;
+		color: $orange;
 	}
 
-	&.light,
-	&.dark {
-		.php,
-		.central {
-			// -webkit-text-fill-color: transparent;
-			// -webkit-text-stroke: 0.1mm rgb(var(--text));
-			// text-shadow: 0 0 3px rgba(var(--text), 0.1);
-		}
-	}
-
-	&.light {
-		.php,
-		.central {
-			color: rgb(var(--dark));
-		}
-	}
-	&.dark {
-		.php,
-		.central {
-			color: rgb(var(--light));
-		}
-	}
 	&.no-pad {
 		padding: 0;
 	}

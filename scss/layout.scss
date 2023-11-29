@@ -7,9 +7,15 @@
 	background: var(--header);
 	color: rgb(var(--text));
 }
+
+%shadow {
+	box-shadow: 0 0.5rem 0.75rem -0.5rem var(--stext);
+}
 body {
+	background: var(--bg);
 	header {
 		@extend %style_layout;
+		@extend %shadow;
 		height: $header_height;
 		#switch_theme {
 			display: flex;
@@ -26,16 +32,18 @@ body {
 	}
 
 	menu {
+		@extend %shadow;
 		position: fixed;
 		top: 3rem;
 		left: -50%;
 		display: flex;
 		flex-direction: column;
-		height: $main_height;
+		height: $menu_height;
 		width: 50%;
 		background: var(--menu);
 		transition: all 0.1s ease;
-		color: rgb(var(--text));
+		color: var(--text);
+		margin: 1rem;
 		&.show_menu {
 			left: 0;
 		}

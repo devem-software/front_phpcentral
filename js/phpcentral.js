@@ -43,5 +43,5 @@ $('#switch_theme').addEventListener('click', () => {
 })
 
 window.addEventListener('load', () => {
-    document.body.classList.toggle('dark');
+    // document.body.classList.toggle('dark');
 })

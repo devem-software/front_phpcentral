@@ -1,7 +1,10 @@
 :root {
-	--light: #{$light};
-	--dark: #{$dark};
-	--soft: #{$soft};
+	--slight: #{$slight};
+	--hlight: #{$hlight};
+
+	--sdark: #{$sdark};
+	--hdark: #{$hdark};
+
 	--orange: #{$orange};
 	--blue: #{$blue};
 }
@@ -9,30 +12,22 @@
 body {
 	&.light,
 	& {
-		--text: var(--dark);
-		--bg: var(--light);
-		--header: linear-gradient(
-			90deg,
-			rgba(var(--text), 0.05) 40%,
-			rgba(var(--orange), 1) 75%,
-			rgba(var(--blue), 1)
-		);
-		--menu: rgb(var(--orange));
-		background: rgb(var(--bg));
-		color: rgb(var(--text));
+		--text: var(--hdark);
+		--stext: var(--sdark);
+		--bg: var(--slight);
+		--header: var(--hlight);
+		--menu: var(--hlight);
+		background: var(--slight);
+		color: var(--text);
 	}
 
 	&.dark {
-		--text: var(--light);
-		--bg: var(--dark);
-		--header: linear-gradient(
-			90deg,
-			rgba(var(--text), 0.05) 40%,
-			rgba(var(--orange), 1) 75%,
-			rgba(var(--blue), 1)
-		);
-		--menu: rgba(var(--soft), 1);
-		background: rgb(var(--bg));
-		color: rgb(var(--text));
+		--text: var(--slight);
+		--stext: #000;
+		--bg: var(--hdark);
+		--header: var(--sdark);
+		--menu: var(--sdark);
+		background: var(--bg);
+		color: var(--text);
 	}
 }
