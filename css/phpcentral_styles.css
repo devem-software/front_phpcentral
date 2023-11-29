@@ -42,7 +42,18 @@ body.dark {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
-  flex-flow: row wrap
+  flex-flow: row wrap;
+-webkit-text-stroke: 0.05em $sdark;
+  text-shadow: 
+  0.05em 0px 0, 
+  -0.05em 0px 0, 
+  0.05em 0.05em 0, 
+  -0.05em -0.05em 0, 
+  0.05em -0.05em 0, 
+  -0.05em 0.05em 0, 
+  0px -0.05em 0, 
+  0px 0.05em 0
+  ;
 }
 
 .logo.x1 {
