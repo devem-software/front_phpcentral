@@ -17,16 +17,22 @@ body {
 		--bg: var(--slight);
 		--header: var(--hlight);
 		--menu: var(--hlight);
+		--bg-button-nav: var(--orange);
+		--color-button-text: var(--bg);
+		--border-button-nav: var(--orange);
 		background: var(--slight);
 		color: var(--text);
 	}
 
 	&.dark {
 		--text: var(--slight);
-		--stext: #000;
+		--stext: var(--slight);
 		--bg: var(--hdark);
 		--header: var(--sdark);
-		--menu: var(--sdark);
+		--menu: var(--orange);
+		--bg-button-nav: var(--bg);
+		--color-button-text: var(--orange);
+		--border-button-nav: var(--orange);
 		background: var(--bg);
 		color: var(--text);
 	}

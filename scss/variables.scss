@@ -8,8 +8,8 @@ $orange: 255, 61, 0;
 
 $Cblue: rgb(41, 121, 255);
 $Corange: rgb(255, 61, 0);
-$Clight: lighten(darken(mix($Cblue, $Corange, 70%), 45%), 5%);
-$Cdark: darken(mix($Cblue, $Corange, 70%), 45%);
+$Cdark: darken(mix($Cblue, $Corange, 60%), 45%);
+$Clight: lighten($Cdark, 5%);
 
 $orange: #ff9100;
 $blue: #2979ff;
@@ -17,14 +17,22 @@ $blue: #2979ff;
 $hdark: #263238;
 $sdark: #455a64;
 
-$hlight: #cfd8dc;
+$hdark: $Cdark;
+$sdark: $Clight;
+
+$hlight: #efebe9;
 $slight: #fefefe;
+
+$hlight: lighten($Cdark, 90);
+$slight: lighten($Clight, 95);
 
 $font-size: 16px;
 $font-family: 'Ubuntu';
 $font-family-logo: 'Zen Dots';
 
+$border-radius: 0.5rem;
+
 $header_height: 3rem;
 $nav_height: 3rem;
 $main_height: calc(100% - $header_height - $nav_height);
-$menu_height: calc($main_height - 2rem);
+$menu_height: calc($main_height - 2.5rem);

@@ -5,17 +5,7 @@
 	line-height: 0.9;
 	display: flex;
 	flex-flow: row wrap;
-	-webkit-text-stroke: 0.05em var(--bg);
-  text-shadow: 
-  0.05em 0px 0, 
-  -0.05em 0px 0, 
-  0.05em 0.05em 0, 
-  -0.05em -0.05em 0, 
-  0.05em -0.05em 0, 
-  -0.05em 0.05em 0, 
-  0px -0.05em 0, 
-  0px 0.05em 0
-  ;
+
 	@for $i from 1 through 10 {
 		&.#{'x' + #{$i}} {
 			padding: #{(0.125 * $i) + 'rem' (0.25 * $i) + 'rem'};

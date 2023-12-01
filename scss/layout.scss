@@ -9,7 +9,7 @@
 }
 
 %shadow {
-	box-shadow: 0 0.5rem 0.75rem -0.5rem var(--stext);
+	box-shadow: 0 0.5rem 0.75rem -0.5rem #000000;
 }
 body {
 	background: var(--bg);
@@ -17,6 +17,8 @@ body {
 		@extend %style_layout;
 		@extend %shadow;
 		height: $header_height;
+		margin: 0.5rem;
+		border-radius: $border-radius;
 		#switch_theme {
 			display: flex;
 			justify-content: center;
@@ -34,8 +36,8 @@ body {
 	menu {
 		@extend %shadow;
 		position: fixed;
-		top: 3rem;
-		left: -75%;
+		top: 3.75rem;
+		left: calc(-50% - 1rem);
 		display: flex;
 		flex-direction: column;
 		height: $menu_height;
@@ -43,7 +45,8 @@ body {
 		background: var(--menu);
 		transition: all 0.1s ease;
 		color: var(--text);
-		margin: 1rem;
+		margin: 0.5rem;
+		border-radius: $border-radius;
 		&.show_menu {
 			left: 0;
 		}
@@ -54,7 +57,6 @@ body {
 			display: flex;
 			align-items: center;
 			padding: 0.5rem 1rem;
-			color: rgb(var(--bg));
 			i {
 				margin-right: 1rem;
 			}
@@ -63,42 +65,50 @@ body {
 
 	nav {
 		@extend %style_layout;
+		@extend %shadow;
 		padding: 0;
-		height: $nav_height;
+		height: calc($nav_height + 0.5rem);
+		margin: 0.5rem;
+		border-radius: $border-radius;
 		a {
+			margin: 0.25rem;
+			border-radius: $border-radius;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			text-decoration: none;
-			color: rgb(var(--text));
+			color: $orange;
 			text-shadow: 1px 1px 1px rgba(var(--text), 0.5);
-			width: 3rem;
-			height: 3rem;
+			width: 3.5rem;
+			height: 2.5rem;
 			margin: 0.5rem;
 			&:not(:first-child):not(:last-child) {
 				background: none;
+				background: var(--bg-button-nav);
+				color: var(--color-button-text);
+				border: 1px solid var(--border-button-nav);
 			}
 			&:not(:first-child):not(:last-child):active {
-				transform: scale(125%) translate(0, -6.25%);
-				background: none;
+				transform: scale(125%);
 			}
 			&:first-child {
 				margin-right: auto;
 				margin-left: 0;
-				width: 4rem;
+				width: 3rem;
+				color: var(--text);
 			}
 			&:last-child {
 				margin-right: 0;
 				margin-left: auto;
-				width: 4rem;
-				color: rgb(var(--light));
+				width: 3rem;
+				color: var(--text);
 			}
 			i {
 				font-size: 150%;
 				border-radius: 1rem;
-				height: 2rem;
-				width: 2rem;
+				height: 1.75rem;
+				width: 1.75rem;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -106,8 +116,9 @@ body {
 			div {
 				position: relative;
 				top: -0.25rem;
-				font-size: 62.5%;
+				font-size: 50%;
 				text-transform: uppercase;
+				font-weight: 700;
 			}
 		}
 	}
