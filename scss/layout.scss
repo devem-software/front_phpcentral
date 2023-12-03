@@ -51,8 +51,12 @@ body {
 			left: 0;
 		}
 		a {
-			&:first-child {
-				margin-top: auto;
+			&:last-child {
+				margin: auto 0.25rem 0.25rem 0.25rem;
+				border-radius: $border-radius;
+				background: var(--bg-button-nav);
+				color: var(--color-button-text);
+				border: 1px solid var(--border-button-nav);
 			}
 			display: flex;
 			align-items: center;

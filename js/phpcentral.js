@@ -1,33 +1,7 @@
+import store from './utils/store.js'
+
 var $ = (_el) => document.querySelector(_el);
 var $all = (_el) => document.querySelectorAll(_el);
-
-const store = {
-    get: (key) => {
-        return localStorage.getItem('key')
-    },
-    set: (key, value) => {
-        localStorage.setItem(key, value)
-    },
-    update: (key, value) => {
-        if (store.get(key) !== undefined) store.set(key, value)
-    },
-    validate: (key) => {
-        if (store.get(key) === null || store.get(key) === undefined) {
-            return false
-        }
-        else {
-            return true
-        }
-    },
-    setMasive: (obj) => {
-        let keys = Object.keys(obj)
-        let values = Object.values(obj)
-
-        keys.forEach((k, i) => {
-            store.set(k, values[i])
-        })
-    }
-}
 
 
 $('#menu_button').addEventListener('click', () => {
@@ -37,11 +11,26 @@ $('#menu_button').addEventListener('click', () => {
     icon.classList.toggle('mdi-close')
 }
 )
+let switchTheme = $('#switch_theme')
+let switchThemeIcon = $('#switch_theme_icon')
+let switchThemeLabel = $('#switch_theme_label')
 
-$('#switch_theme').addEventListener('click', () => {
-    document.body.classList.toggle('dark')
+switchTheme.addEventListener('click', () => {
+    let bodyClass = document.body.classList
+    bodyClass.toggle('dark')
+
+    if (bodyClass.contains('dark')) {
+        console.log('el tema es oscuro')
+        switchThemeIcon.classList = ['mdi mdi-24px mdi-white-balance-sunny']
+        switchThemeLabel.innerHTML = 'CAMBIAR A CLARO'
+    } else {
+        console.log('el tema es claro')
+        switchThemeIcon.classList = ['mdi mdi-24px mdi-weather-night']
+        switchThemeLabel.innerHTML = 'CAMBIAR A OSCURO'
+    }
+
 })
 
 window.addEventListener('load', () => {
-    // document.body.classList.toggle('dark');
+    console.log(store.get('edwin'))
 })
