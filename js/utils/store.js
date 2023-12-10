@@ -85,7 +85,7 @@ const store = {
      * *     'bar':456
      * *   }
      * * )
-     * @return null
+     * @return void
      */
     setMassive: (obj) => {
         let keys = Object.keys(obj)
@@ -117,7 +117,21 @@ const store = {
             result.push(store.get(a))
         })
         return result
-    }
+    },
+    /**
+     * @description
+     * * Elimina un valor del localStorage 
+     * * mediante una cadena que representa 
+     * * la clave con la que esta almacenado el valor
+     * @param string key
+     * @tutorial
+     * * store.delete(key)
+     * @return void
+     */
+    delete: (key) => {
+        (store.validate(key)) ? localStorage.removeItem(key) : console.warn(`la clave ${key} no ha podido ser eliminada dado que no esta disponible en el localStorage`)
+    },
+    deleteMassive: () => { }
 }
 
 export default store

@@ -6,8 +6,8 @@ $blue: 41, 121, 255;
 $orange: 255, 87, 34;
 $orange: 255, 61, 0;
 
-$Cblue: rgb(41, 121, 255);
-$Corange: rgb(255, 61, 0);
+$Cblue: #2979ff;
+$Corange: #ff3d00;
 $Cdark: darken(mix($Cblue, $Corange, 60%), 45%);
 $Clight: lighten($Cdark, 5%);
 
