@@ -132,10 +132,7 @@ const store = {
         (store.validate(key)) ? localStorage.removeItem(key) : console.warn(`la clave ${key} no ha podido ser eliminada dado que no esta disponible en el localStorage`)
     },
     deleteMassive: (obj) => {
-      obj.forEach(key,()=>{
-        store.delete(key)
-      }
-      )
+      obj.forEach(key,()=>store.delete(key))
     },
     clear: () => localStorage.clear()
 }
