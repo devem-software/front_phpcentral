@@ -1,30 +1,12 @@
-$light: 250, 250, 250;
-$soft: 55, 71, 79;
-$dark: 33, 33, 33;
-$blue: 63, 81, 181;
-$blue: 41, 121, 255;
-$orange: 255, 87, 34;
-$orange: 255, 61, 0;
-
-$Cblue: #2979ff;
-$Corange: #ff3d00;
-$Cdark: darken(mix($Cblue, $Corange, 60%), 45%);
-$Clight: lighten($Cdark, 5%);
-
+$dark: rgb(33, 33, 33);
 $orange: #ff9100;
 $blue: #2979ff;
 
-$hdark: #263238;
-$sdark: #455a64;
+$hdark: darken(mix($blue, $orange, 60%), 45%);
+$sdark: lighten($dark, 5%);
 
-$hdark: $Cdark;
-$sdark: $Clight;
-
-$hlight: #efebe9;
-$slight: #fefefe;
-
-$hlight: lighten($Cdark, 90);
-$slight: lighten($Clight, 95);
+$hlight: lighten($hdark, 85);
+$slight: lighten($sdark, 95);
 
 $font-size: 16px;
 $font-family: 'Ubuntu';

@@ -14,7 +14,7 @@ window.addEventListener('load', async () => {
         await store.setMassive({
             theme: 'light',
             icon: 'mdi-weather-night',
-            label: 'OSCURO'
+            label: 'NOCHE'
         })
 
 

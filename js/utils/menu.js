@@ -16,11 +16,11 @@ sT.addEventListener('click', async () => {
     if (document.body.classList.contains('dark')) {
         newTheme = 'light';
         newIcon = 'mdi-weather-night';
-        newLabel = 'OSCURO';
+        newLabel = 'NOCHE';
     } else {
         newTheme = 'dark';
         newIcon = 'mdi-white-balance-sunny';
-        newLabel = 'CLARO';
+        newLabel = 'DIA';
     }
 
     store.setMassive({
