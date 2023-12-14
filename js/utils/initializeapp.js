@@ -1,6 +1,6 @@
-import store from "./store";
-import { applyTheme } from './functions';
 import { $ } from "./selector";
+import { applyTheme } from './functions';
+import store from "./store";
 
 var bodyClassList = document.body.classList
 var sTIcon = $('#switch_theme_icon')

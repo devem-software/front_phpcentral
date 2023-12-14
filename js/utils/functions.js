@@ -1,5 +1,5 @@
-import store from "./store";
 import { $ } from "./selector";
+import store from "./store";
 
 export const applyTheme = (theme, icon, label) => {
 
