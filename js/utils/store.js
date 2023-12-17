@@ -77,7 +77,7 @@ const store = {
    * @description
    * * Almacena de forma masiva datos en el 
    * * localStorage, mediante un objeto json
-   * @param obj {}
+   * @param Object {}
    * @tutorial 
    * * store.setMassive(
    * *   {
